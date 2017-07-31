@@ -1,8 +1,13 @@
+[![](https://jitpack.io/v/fccaikai/Lucky.svg)](https://jitpack.io/#fccaikai/Lucky)
 # Lucky
 快速实现APP首页,支持底部3-5个tab。
 
+----
+
 ### 截图
 ![](https://ws3.sinaimg.cn/large/006tNc79gy1fi2zwdihxug308w0ftdiz.gif)
+
+----
 
 ### 使用方法
 
@@ -58,8 +63,12 @@ public class MainActivity extends LuckyBottomActivity {
 }
 ```
 
+----
+
 ### 结束
 就是这么快。
+
+----
 
 ### LICENSE
 Apache License 2.0 [LICENSE](https://github.com/fccaikai/Lucky/blob/master/LICENSE)
