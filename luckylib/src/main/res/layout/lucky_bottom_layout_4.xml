@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@android:color/white"
+              android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/lucky_line"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/itemLayout1"
+            style="@style/lucky_bottom_item_layout">
+
+            <ImageView
+                android:id="@+id/itemIcon1"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/ic_launcher_round"/>
+
+            <TextView
+                android:id="@+id/itemTitle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="item1"
+                android:textColor="#333333"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/itemLayout2"
+            style="@style/lucky_bottom_item_layout">
+
+            <ImageView
+                android:id="@+id/itemIcon2"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/ic_launcher_round"/>
+
+            <TextView
+                android:id="@+id/itemTitle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="item1"
+                android:textColor="#333333"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/itemLayout3"
+            style="@style/lucky_bottom_item_layout">
+
+            <ImageView
+                android:id="@+id/itemIcon3"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/ic_launcher_round"/>
+
+            <TextView
+                android:id="@+id/itemTitle3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="item1"
+                android:textColor="#333333"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/itemLayout4"
+            style="@style/lucky_bottom_item_layout">
+
+            <ImageView
+                android:id="@+id/itemIcon4"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/ic_launcher_round"/>
+
+            <TextView
+                android:id="@+id/itemTitle4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="item1"
+                android:textColor="#333333"
+                android:textSize="12sp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

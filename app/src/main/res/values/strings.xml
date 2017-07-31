@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Lucky</string>
+    <string name="account">account</string>
+    <string name="love">love</string>
+    <string name="lock">lock</string>
+    <string name="setting">setting</string>
+</resources>

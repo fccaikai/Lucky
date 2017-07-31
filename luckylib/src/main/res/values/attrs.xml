@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BottomView">
+        <attr name="weight" format="integer"></attr>
+        <attr name="inactiveColor" format="color"></attr>
+    </declare-styleable>
+</resources>
