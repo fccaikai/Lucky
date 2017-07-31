@@ -1,7 +1,6 @@
 package com.kcode.lucky;
 
-import android.os.Bundle;
-import android.util.Log;
+import android.widget.Toast;
 
 import com.kcode.luckylib.core.Item;
 import com.kcode.luckylib.core.LuckyBottomActivity;
@@ -10,14 +9,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends LuckyBottomActivity {
-
-    private static final String TAG = "MainActivity";
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-    }
-
 
     @Override
     protected List<Item> getItems() {
@@ -36,6 +27,6 @@ public class MainActivity extends LuckyBottomActivity {
 
     @Override
     protected void onItemSelected(int position) {
-        Log.d(TAG, "" + position);
+        Toast.makeText(getApplicationContext(), "选中：" + position, Toast.LENGTH_SHORT).show();
     }
 }
