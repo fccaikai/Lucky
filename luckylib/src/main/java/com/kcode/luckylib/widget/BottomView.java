@@ -3,7 +3,6 @@ package com.kcode.luckylib.widget;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.drawable.Drawable;
-import android.os.Build;
 import android.support.annotation.Nullable;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.graphics.drawable.DrawableCompat;
@@ -297,25 +296,24 @@ public class BottomView extends LinearLayout {
             return;
         }
 
-        tintDrawable(imageView, mInactiveColor);
+        setItemTint(imageView, mInactiveColor);
         getTitleViewByIndex(index).setTextColor(mInactiveColor);
         if (mLastSelectedItem != -1) {
-            tintDrawable(getIconViewByIndex(mLastSelectedItem), ContextCompat.getColor(mContext, R.color.lucky_default_item));
+            setItemTint(getIconViewByIndex(mLastSelectedItem), ContextCompat.getColor(mContext, R.color.lucky_default_item));
             getTitleViewByIndex(mLastSelectedItem).setTextColor(ContextCompat.getColor(mContext, R.color.lucky_default_item));
         }
         mLastSelectedItem = index;
 
     }
 
-    public void tintDrawable(ImageView view, int color) {
-        final Drawable originalDrawable = view.getBackground();
-        final Drawable wrappedDrawable = DrawableCompat.wrap(originalDrawable).mutate();
-        DrawableCompat.setTint(wrappedDrawable, color);
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
-            view.setBackground(wrappedDrawable);
-        } else {
-            view.setImageDrawable(wrappedDrawable);
+    public void setItemTint(ImageView view,int mIconTint){
+        Drawable icon = view.getBackground();
+        if (icon != null) {
+            Drawable.ConstantState state = icon.getConstantState();
+            icon = DrawableCompat.wrap(state == null ? icon : state.newDrawable()).mutate();
+            DrawableCompat.setTint(icon, mIconTint);
         }
+        view.setImageDrawable(icon);
     }
 
     public void setWeight(int size) {
