@@ -1,7 +1,13 @@
 package com.kcode.lucky;
 
+import android.support.v4.app.Fragment;
 import android.widget.Toast;
 
+import com.kcode.lucky.fragment.Fragment1;
+import com.kcode.lucky.fragment.Fragment2;
+import com.kcode.lucky.fragment.Fragment3;
+import com.kcode.lucky.fragment.Fragment4;
+import com.kcode.lucky.fragment.Fragment5;
 import com.kcode.luckylib.core.Item;
 import com.kcode.luckylib.core.LuckyBottomActivity;
 
@@ -28,5 +34,16 @@ public class MainActivity extends LuckyBottomActivity {
     @Override
     protected void onItemSelected(int position) {
         Toast.makeText(getApplicationContext(), "选中：" + position, Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    protected List<Fragment> getFragments() {
+        List<Fragment> fragments = new ArrayList<>();
+        fragments.add(Fragment1.newInstance());
+        fragments.add(Fragment2.newInstance());
+        fragments.add(Fragment3.newInstance());
+        fragments.add(Fragment4.newInstance());
+        fragments.add(Fragment5.newInstance());
+        return fragments;
     }
 }
