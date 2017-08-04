@@ -4,4 +4,8 @@
     <color name="colorPrimaryDark">#E64A19</color>
     <color name="colorAccent">#FF4081</color>
     <color name="lucky_toolbar_color">#FF5722</color>
+
+    <color name="lucky_bottom_bg">#1B1B1F</color>
+    <color name="lucky_item_activated">#B80026</color>
+    <color name="lucky_default_item">#808088</color>
 </resources>

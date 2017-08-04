@@ -27,6 +27,7 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:layout_alignParentBottom="true"
+        android:background="#1B1B1F"
         app:inactiveColor="@color/lucky_item_activated"/>
 
     <FrameLayout

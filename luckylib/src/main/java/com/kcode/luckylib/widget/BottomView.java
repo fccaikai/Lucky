@@ -60,6 +60,7 @@ public class BottomView extends LinearLayout {
         super(context, attrs);
         mContext = context;
         getAttrs(context, attrs);
+        setBackgroundColor(ContextCompat.getColor(context,R.color.lucky_bottom_bg));
     }
 
     /**

@@ -6,4 +6,6 @@
     <color name="lucky_toolbar_color">@color/colorPrimary</color>
     <color name="lucky_item_activated">@color/colorPrimary</color>
     <color name="lucky_item_normal">@color/lucky_default_item</color>
+    <color name="lucky_bottom_bg">#ffffff</color>
+    <color name="lucky_bottom_bg_pressed">@android:color/darker_gray</color>
 </resources>
