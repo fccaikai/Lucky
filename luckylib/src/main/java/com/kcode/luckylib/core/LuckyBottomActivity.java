@@ -147,12 +147,11 @@ public abstract class LuckyBottomActivity extends AppCompatActivity {
 
     private void initToolbar() {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        if (hideToolbar()) {
-            toolbar.setVisibility(View.GONE);
-            return;
-        }
         setSupportActionBar(toolbar);
         mTitle = (TextView) findViewById(R.id.title);
+        if (hideToolbar()) {
+            toolbar.setVisibility(View.GONE);
+        }
     }
 
     protected abstract List<Item> getItems();
