@@ -27,8 +27,7 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:layout_alignParentBottom="true"
-        app:inactiveColor="@color/lucky_toolbar_color"
-        app:weight="4"/>
+        app:inactiveColor="@color/lucky_item_activated"/>
 
     <FrameLayout
         android:id="@+id/container"

@@ -46,4 +46,9 @@ public class MainActivity extends LuckyBottomActivity {
         fragments.add(Fragment5.newInstance());
         return fragments;
     }
+
+    @Override
+    protected boolean hideToolbar() {
+        return false;
+    }
 }

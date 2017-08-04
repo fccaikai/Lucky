@@ -70,7 +70,6 @@ public class BottomView extends LinearLayout {
      */
     private void getAttrs(Context context, AttributeSet attrs) {
         TypedArray ta = context.obtainStyledAttributes(attrs, R.styleable.BottomView);
-        mWeight = ta.getInteger(R.styleable.BottomView_weight, 3);
         mInactiveColor = ta.getColor(R.styleable.BottomView_inactiveColor, ContextCompat.getColor(mContext, R.color.lucky_line));
         ta.recycle();
     }

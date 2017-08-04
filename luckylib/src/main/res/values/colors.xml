@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="colorPrimary">#FF5722</color>
     <color name="lucky_line">#ddd</color>
     <color name="lucky_default_item">#FF000000</color>
-    <color name="lucky_toolbar_color">#3F51B5</color>
+    <color name="lucky_toolbar_color">@color/colorPrimary</color>
+    <color name="lucky_item_activated">@color/colorPrimary</color>
+    <color name="lucky_item_normal">@color/lucky_default_item</color>
 </resources>

@@ -29,8 +29,7 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:layout_alignParentBottom="true"
-        app:inactiveColor="@color/colorPrimary"
-        app:weight="4"/>
+        app:inactiveColor="@color/colorPrimary"/>
 
     <FrameLayout
         android:id="@+id/container"

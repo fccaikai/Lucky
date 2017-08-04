@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.View;
 import android.widget.TextView;
 
 import com.kcode.luckylib.R;
@@ -126,14 +127,14 @@ public abstract class LuckyBottomActivity extends AppCompatActivity {
                 mLastFragment = mFragment4;
                 break;
             case 4:
-                mFragment4 = getSupportFragmentManager().findFragmentByTag(FRAGMENT5_FLAG);
-                if (mFragment4 == null) {
-                    mFragment4 = mFragments.get(position);
-                    tran.add(R.id.container, mFragment4,FRAGMENT5_FLAG);
+                mFragment5 = getSupportFragmentManager().findFragmentByTag(FRAGMENT5_FLAG);
+                if (mFragment5 == null) {
+                    mFragment5 = mFragments.get(position);
+                    tran.add(R.id.container, mFragment5,FRAGMENT5_FLAG);
                 }else {
-                    tran.show(mFragment4);
+                    tran.show(mFragment5);
                 }
-                mLastFragment = mFragment4;
+                mLastFragment = mFragment5;
                 break;
         }
 
@@ -146,6 +147,10 @@ public abstract class LuckyBottomActivity extends AppCompatActivity {
 
     private void initToolbar() {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        if (hideToolbar()) {
+            toolbar.setVisibility(View.GONE);
+            return;
+        }
         setSupportActionBar(toolbar);
         mTitle = (TextView) findViewById(R.id.title);
     }
@@ -155,4 +160,6 @@ public abstract class LuckyBottomActivity extends AppCompatActivity {
     protected abstract void onItemSelected(int position);
 
     protected abstract List<Fragment> getFragments();
+
+    protected abstract boolean hideToolbar();
 }
