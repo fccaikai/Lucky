@@ -33,7 +33,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="item1"
-                android:textColor="#333333"
+                android:textColor="@color/lucky_bottom_text_color"
                 android:textSize="12sp"/>
 
         </LinearLayout>
@@ -53,7 +53,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="item1"
-                android:textColor="#333333"
+                android:textColor="@color/lucky_bottom_text_color"
                 android:textSize="12sp"/>
 
         </LinearLayout>
@@ -73,7 +73,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="item1"
-                android:textColor="#333333"
+                android:textColor="@color/lucky_bottom_text_color"
                 android:textSize="12sp"/>
         </LinearLayout>
     </LinearLayout>
