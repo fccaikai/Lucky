@@ -107,7 +107,7 @@ public abstract class LuckyBottomActivity extends AppCompatActivity {
                 mLastFragment = mFragment2;
                 break;
             case 2:
-                mFragment3 = getSupportFragmentManager().findFragmentByTag(FRAGMENT1_FLAG);
+                mFragment3 = getSupportFragmentManager().findFragmentByTag(FRAGMENT3_FLAG);
                 if (mFragment3 == null) {
                     mFragment3 = mFragments.get(position);
                     tran.add(R.id.container, mFragment3,FRAGMENT3_FLAG);
