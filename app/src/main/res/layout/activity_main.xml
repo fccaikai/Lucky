@@ -9,7 +9,7 @@
     tools:context="com.kcode.lucky.MainActivity">
 
 
-    <android.support.v7.widget.Toolbar
+    <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
@@ -22,7 +22,7 @@
             android:gravity="center"
             android:textColor="@android:color/white"
             android:textSize="20sp"/>
-    </android.support.v7.widget.Toolbar>
+    </androidx.appcompat.widget.Toolbar>
 
     <com.kcode.luckylib.widget.BottomView
         android:id="@+id/bottomView"

@@ -7,7 +7,7 @@
     android:background="#f2f2f2">
 
 
-    <android.support.v7.widget.Toolbar
+    <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
@@ -20,7 +20,7 @@
             android:gravity="center"
             android:textColor="@android:color/white"
             android:textSize="20sp"/>
-    </android.support.v7.widget.Toolbar>
+    </androidx.appcompat.widget.Toolbar>
 
     <com.kcode.luckylib.widget.BottomView
         android:id="@+id/bottomView"
@@ -35,6 +35,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@id/bottomView"
-        android:layout_below="@id/toolbar"></FrameLayout>
+        android:layout_below="@id/toolbar"/>
 
 </RelativeLayout>

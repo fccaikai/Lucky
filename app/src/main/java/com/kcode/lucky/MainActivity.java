@@ -1,6 +1,6 @@
 package com.kcode.lucky;
 
-import android.support.v4.app.Fragment;
+import androidx.fragment.app.Fragment;
 import android.widget.Toast;
 
 import com.kcode.lucky.fragment.Fragment1;
